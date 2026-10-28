@@ -1,10 +1,10 @@
 # Minimap Control for Grand Theft Auto V
 
 [![GTA V](https://img.shields.io/badge/Game-Grand%20Theft%20Auto%20V-blue.svg)](https://www.rockstargames.com/gta-v)
-[![ScriptHookVDotNet](https://img.shields.io/badge/ScriptHookVDotNet-v3.7.0+-orange.svg)](https://github.com/scripthookvdotnet/scripthookvdotnet)
+[![ScriptHookVDotNet](https://img.shields.io/badge/ScriptHookVDotNet-v3.0+-orange.svg)](https://github.com/scripthookvdotnet/scripthookvdotnet)
 [![Platform](https://img.shields.io/badge/Platform-PC%20%28x64%29-lightgrey.svg)]()
 [![Target](https://img.shields.io/badge/.NET%20Framework-4.8-purple.svg)]()
-[![Version](https://img.shields.io/badge/Version-1.1.0-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-1.2.0-green.svg)](CHANGELOG.md)
 
 **Minimap Control** is a lightweight, responsive utility for Grand Theft Auto V that gives you complete control over your radar and HUD navigation.
 
@@ -13,6 +13,10 @@ Whether you want clean, immersive cinematic exploration on foot or automatic rad
 ---
 
 ## Key Features
+
+- **Keep Health & Armor Visible (`KeepHealthArmorVisible = true`)**:
+  - Keep your vital Health and Armor meters on screen even when the minimap/radar is hidden.
+  - Automatically adjusts to all monitor aspect ratios and user safe-zone settings with low-health alert pulsing.
 
 - **Dynamic Vehicle-Only Mode (`VehicleOnlyMode = true`)**:
   - Automatically hides the radar and minimap while exploring on foot for maximum immersion.
@@ -71,14 +75,22 @@ Whether you want clean, immersive cinematic exploration on foot or automatic rad
 
 ---
 
-## Download & Releases
+## Building from Source
 
-Download the latest compiled release from [GitHub Releases](https://github.com/StoicBliss/GTA5-MinimapControl/releases/latest).
+To compile from source, open PowerShell in the project directory and run:
 
-Each release includes:
-- `MinimapControl.dll` (ScriptHookVDotNet plugin)
-- `MinimapControl.ini` (default configuration)
-- `MinimapControl_Release.zip` (complete release archive)
+```powershell
+.\build.ps1
+```
+
+To compile and package a distribution release zip:
+
+```powershell
+.\build.ps1 -Package
+```
+
+---
+
 ## Author & Credits
 
 - Developed by **StoicBliss** ([@StoicBliss](https://github.com/StoicBliss))

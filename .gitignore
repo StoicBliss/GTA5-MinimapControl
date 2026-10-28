@@ -1,5 +1,8 @@
-*.zip
-*.dll
+bin/
+obj/
+*.suo
+*.user
 *.log
+*.zip
 .DS_Store
 Thumbs.db
